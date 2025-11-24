@@ -93,7 +93,7 @@ body {
 }
 
 .speaker-card img {
-  border-radius: 50%;
+  border-radius: 9999px;
   height: auto;
   margin-bottom: 1.5rem;
   max-width: 10rem;
@@ -113,7 +113,7 @@ body {
 
 .schedule h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
@@ -172,7 +172,7 @@ body {
   border: 1px solid #888888;
   border-radius: .5rem;
   font-size: 1rem;
-  padding: 1.5rem;
+  margin-bottom: 1.5rem;
   max-width: 32rem;
   padding: .75rem;
   width: 100%;
@@ -201,6 +201,45 @@ body {
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
-  
-  
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+
+  .speakers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .schedule-grid {
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .newsletter-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .newsletter-text {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .hero,
+  .speakers,
+  .schedule,
+  .newsletter {
+    padding: 4rem;
+
+  }
+}
+
+/* Color Scheme */
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--color-dark);
+    --color-foreground: var(--color-light);
+    --color-card-background: var(--color-black);
+  }
 }
