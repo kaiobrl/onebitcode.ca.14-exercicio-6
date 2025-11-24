@@ -205,12 +205,12 @@ body {
     font-size: 3rem;
   }
 
-
   .speakers-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .schedule-grid {
+    text-align: center;
     grid-template-columns: repeat(2, 2fr);
   }
 
