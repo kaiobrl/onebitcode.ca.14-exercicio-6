@@ -210,8 +210,8 @@ body {
   }
 
   .schedule-grid {
-    text-align: center;
     grid-template-columns: repeat(2, 2fr);
+    text-align: center;
   }
 
   .newsletter-grid {
